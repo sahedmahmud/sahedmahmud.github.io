@@ -1,2 +1,0 @@
-Put your PDF CV here and rename it to: Sahed-Mahmud-CV.pdf
-(Or update the hero button link in index.html).
