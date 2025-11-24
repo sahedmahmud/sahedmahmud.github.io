@@ -258,6 +258,7 @@ h3 {
     rgba(0, 86, 216, 0.15),
     transparent 60%
   );
+  animation: floatPortrait 7s ease-in-out infinite;
 }
 
 .portrait {
@@ -326,6 +327,12 @@ h3 {
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
 }
 
 .card p {
@@ -358,6 +365,12 @@ h3 {
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 2.25rem;
   box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
 }
 
 .tcard::before {
@@ -437,6 +450,13 @@ h3 {
   padding: 0.4rem;
   background: #fffa;
   color: #000;
+}
+
+
+@keyframes floatPortrait {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
 }
 
 /* Reveal animations on scroll */
