@@ -285,6 +285,40 @@
         </div>
       </div>
     </section>
+<!-- ====== Request CV ====== -->
+<section id="request-cv" class="section alt reveal">
+  <div class="container narrow">
+    <h2>Request My CV</h2>
+    <p>If you would like a copy of my latest CV, please leave your email address below. I will email it to you.</p>
+
+    <form action="https://formsubmit.co/sahedmahmud.kuet.mse@gmail.com" method="POST" class="cv-form">
+      <!-- FormSubmit options -->
+      <input type="hidden" name="_subject" value="New CV Request from Portfolio Website">
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redirect URL after success (optional, see STEP 4) -->
+      <input type="hidden" name="_next" value="https://sahedmahmud.github.io/thanks.html">
+
+      <label for="email">Your email address</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+      />
+
+      <label for="message">Message (optional)</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="3"
+        placeholder="Tell me briefly why you’re requesting my CV (optional)"
+      ></textarea>
+
+      <button type="submit" class="btn primary">Request CV</button>
+    </form>
+  </div>
+</section>
 
     <!-- ====== Contact ====== -->
     <section id="contact" class="section alt reveal">
