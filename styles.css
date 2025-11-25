@@ -258,6 +258,7 @@ h3 {
     rgba(0, 86, 216, 0.15),
     transparent 60%
   );
+  animation: floatPortrait 8s ease-in-out infinite;
 }
 
 .portrait {
@@ -274,7 +275,6 @@ h3 {
   width: 40vw;
   opacity: 0.4;
   pointer-events: none;
-  animation: orbitSpin 26s linear infinite;
 }
 
 .hero .pattern {
@@ -284,7 +284,6 @@ h3 {
   width: 46vw;
   opacity: 0.2;
   pointer-events: none;
-  animation: patternDrift 32s ease-in-out infinite alternate;
 }
 
 /* Einstein quote under portrait */
@@ -328,6 +327,12 @@ h3 {
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
 }
 
 .card p {
@@ -360,6 +365,12 @@ h3 {
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 2.25rem;
   box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tcard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
 }
 
 .tcard::before {
@@ -515,4 +526,35 @@ h3 {
     gap: 0.25rem;
     padding-top: 0.5rem;
   }
+}
+
+/* ==========================================================
+   11. CV Request Form
+   ========================================================== */
+.cv-form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 480px;
+}
+
+.cv-form label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.cv-form input[type="email"],
+.cv-form textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--border);
+  font: inherit;
+  resize: vertical;
+}
+
+.cv-form input[type="email"]:focus,
+.cv-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(0, 86, 216, 0.15);
 }
