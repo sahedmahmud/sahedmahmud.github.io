@@ -591,3 +591,23 @@ h3 {
   border-color: var(--accent);
   box-shadow: 0 0 0 1px rgba(0, 86, 216, 0.15);
 }
+/* ==========================================================
+   CREDLY CERTIFICATION BADGES
+   ========================================================== */
+
+.certification-card {
+  text-align: center;
+}
+
+.certification-card p {
+  margin-bottom: 1rem;
+}
+
+.credly-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 270px;
+  margin-top: 0.75rem;
+}
