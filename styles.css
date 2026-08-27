@@ -637,6 +637,20 @@ h3 {
   align-items: center;
   gap: 0.45rem;
 }
+/* Refine profile buttons on desktop */
+.contact-row {
+  gap: 0.75rem;
+}
+
+.contact-row .btn {
+  padding: 0.8rem 1rem;
+  white-space: nowrap;
+}
+
+.contact-row .btn i {
+  width: 1.1rem;
+  text-align: center;
+}
 
 .contact-row .btn i {
   font-size: 1rem;
