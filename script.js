@@ -42,6 +42,3 @@ document.querySelectorAll('.copy-email-btn').forEach((button) => {
     }
   });
 });
-section {
-  scroll-margin-top: 90px;
-}
