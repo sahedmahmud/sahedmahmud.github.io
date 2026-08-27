@@ -631,3 +631,15 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+/* Profile button icons */
+.contact-row .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.contact-row .btn i {
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
