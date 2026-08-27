@@ -538,7 +538,8 @@ h3 {
   }
 }
 
-@media (max-width: 620px) {
+/* Tablet and mobile navigation */
+@media (max-width: 900px) {
   .site-nav {
     display: none;
   }
@@ -547,20 +548,32 @@ h3 {
     display: inline-block;
   }
 
-  .grid-3,
-  .feature-cards,
-  .industry-grid {
-    grid-template-columns: 1fr;
+  .nav.open {
+    flex-wrap: wrap;
   }
 
   .nav.open #site-nav {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    width: 100%;
     gap: 0.25rem;
     padding-top: 0.5rem;
   }
+
+  .nav.open #site-nav a {
+    width: 100%;
+  }
 }
 
+/* Small-screen content layout */
+@media (max-width: 620px) {
+  .grid-3,
+  .feature-cards,
+  .industry-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* ==========================================================
    11. CV Request Form
    ========================================================== */
@@ -656,4 +669,8 @@ h3 {
   font-size: 1rem;
   line-height: 1;
   flex-shrink: 0;
+}
+/* Prevent sticky header from covering anchored sections */
+section {
+  scroll-margin-top: 90px;
 }
